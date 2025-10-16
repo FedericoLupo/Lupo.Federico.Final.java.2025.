@@ -1,0 +1,4 @@
+Listado de Vehículos filtrados por: marca contiene "ford"
+----------------------------------------
+Auto - ford fiesta (2014) - NAFTA - Puertas: 5
+Camioneta - ford ranger raptor (2024) - NAFTA - Carga: 1500.0kg

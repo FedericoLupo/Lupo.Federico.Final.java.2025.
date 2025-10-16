@@ -1,0 +1,10 @@
+tipo,marca,modelo,anio,combustible,atributoExtra
+Auto,ford,fiesta,2014,NAFTA,5
+Moto,honda,wave,2025,NAFTA,110
+Moto,cfmoto,nk400,2022,NAFTA,400
+Camioneta,ford,ranger raptor,2024,NAFTA,1500.0
+Auto,volkswagen,gol trend,2015,NAFTA,3
+Camioneta,dodge,ram,2013,NAFTA,2500.0
+Moto,honda,tornado,2009,NAFTA,250
+Auto,tesla,model x,2023,ELECTRICO,5
+Auto,toyota,prius,2010,HIBRIDO,5

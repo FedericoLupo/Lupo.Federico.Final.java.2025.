@@ -1,0 +1,11 @@
+[
+  { "tipo": "Auto", "marca": "ford", "modelo": "fiesta", "anio": 2014, "combustible": "NAFTA", "puertas": 5 },
+  { "tipo": "Moto", "marca": "honda", "modelo": "wave", "anio": 2025, "combustible": "NAFTA", "cilindrada": 110 },
+  { "tipo": "Moto", "marca": "cfmoto", "modelo": "nk400", "anio": 2022, "combustible": "NAFTA", "cilindrada": 400 },
+  { "tipo": "Camioneta", "marca": "ford", "modelo": "ranger raptor", "anio": 2024, "combustible": "NAFTA", "capacidadCarga": 1500.0 },
+  { "tipo": "Auto", "marca": "volkswagen", "modelo": "gol trend", "anio": 2015, "combustible": "NAFTA", "puertas": 3 },
+  { "tipo": "Camioneta", "marca": "dodge", "modelo": "ram", "anio": 2013, "combustible": "NAFTA", "capacidadCarga": 2500.0 },
+  { "tipo": "Moto", "marca": "honda", "modelo": "tornado", "anio": 2009, "combustible": "NAFTA", "cilindrada": 250 },
+  { "tipo": "Auto", "marca": "tesla", "modelo": "model x", "anio": 2023, "combustible": "ELECTRICO", "puertas": 5 },
+  { "tipo": "Auto", "marca": "toyota", "modelo": "prius", "anio": 2010, "combustible": "HIBRIDO", "puertas": 5 }
+]

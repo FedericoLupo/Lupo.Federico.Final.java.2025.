@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ui.controllers.MainController"
+      spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <!-- Formulario para crear/editar vehículos -->
+    <GridPane hgap="8" vgap="8">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="20"/>
+            <ColumnConstraints percentWidth="30"/>
+            <ColumnConstraints percentWidth="20"/>
+            <ColumnConstraints percentWidth="30"/>
+        </columnConstraints>
+
+        <Label text="Tipo:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <ChoiceBox fx:id="cbTipo" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        
+        <Label text="Marca:" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+        <TextField fx:id="tfMarca" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+        <Label text="Modelo:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="tfModelo" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Año:" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+        <TextField fx:id="tfAnio" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+        <Label text="Combustible:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <ChoiceBox fx:id="cbCombustible" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label fx:id="lblExtra" text="Extra:" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+        <TextField fx:id="tfExtra" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+    </GridPane>
+
+    <!-- Botones de acción -->
+    <HBox spacing="8">
+        <Button fx:id="btnAgregar" text="Agregar"/>
+        <Button fx:id="btnActualizar" text="Actualizar"/>
+        <Button fx:id="btnEliminar" text="Eliminar"/>
+        <Button fx:id="btnListar" text="Listar"/>
+        <Button fx:id="btnAplicarCambio" text="Incrementar Año (+1)"/>
+        <Button fx:id="btnCalcularAlquiler" text="Calcular Alquiler"/>
+    </HBox>
+
+    <HBox spacing="8">
+        <Button fx:id="btnExportarJSON" text="Exportar JSON"/>
+        <Button fx:id="btnExportarCSV" text="Exportar CSV"/>
+        <Button fx:id="btnSerializar" text="Serializar (.dat)"/>
+        <Button fx:id="btnDeserializar" text="Cargar (.dat)"/>
+        <Button fx:id="btnExportarTxtFiltrado" text="Exportar TXT (Filtrado)"/>
+    </HBox>
+
+    <!-- Filtro rápido -->
+    <HBox spacing="8">
+        <Label text="Filtro por marca contiene:"/>
+        <TextField fx:id="tfFiltroMarca" prefWidth="200"/>
+        <Button fx:id="btnFiltrar" text="Filtrar"/>
+    </HBox>
+
+    <!-- Tabla -->
+    <TableView fx:id="tabla" prefHeight="360" prefWidth="900">
+        <columns>
+            <TableColumn fx:id="colTipo" text="Tipo" prefWidth="120"/>
+            <TableColumn fx:id="colMarca" text="Marca" prefWidth="150"/>
+            <TableColumn fx:id="colModelo" text="Modelo" prefWidth="150"/>
+            <TableColumn fx:id="colAnio" text="Año" prefWidth="80"/>
+            <TableColumn fx:id="colCombustible" text="Combustible" prefWidth="150"/>
+            <TableColumn fx:id="colExtra" text="Extra" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+</VBox>
